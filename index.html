@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- In your header section -->
+
+    <!-- Header with Navigation -->
+    <header class="header slide-down">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <nav class="navbar">
+                 <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="products.html?category=electronics">Electronics</a></li>
+                <li><a href="products.html?category=fashion">Fashion</a></li>
+                <li><a href="products.html?category=home">Home</a></li>
+            </ul>
+            </nav>
+            <div class="icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <a href="login.html" class="user"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <div class="menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Hero Section with Product Link -->
+    <section class="hero parallax">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Welcome to ShopEase</h1>
+                <p>Discover amazing products at unbeatable prices</p>
+                <a href="products.html" class="btn btn-primary pulse">Browse All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title slide-up">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card scale-up">
+                    <a href="products.html?category=electronics">
+                        <img src="images/electronics.jpg" alt="Electronics" class="hover-zoom">
+                        <h3>Electronics</h3>
+                        <span class="btn">View Products</span>
+                    </a>
+                </div>
+                <div class="category-card scale-up" style="animation-delay: 0.2s;">
+                    <a href="products.html?category=fashion">
+                        <img src="images/fashion.jpg" alt="Fashion" class="hover-zoom">
+                        <h3>Fashion</h3>
+                        <span class="btn">View Products</span>
+                    </a>
+                </div>
+                <div class="category-card scale-up" style="animation-delay: 0.4s;">
+                    <a href="products.html?category=home">
+                        <img src="images/home.jpg" alt="Home & Kitchen" class="hover-zoom">
+                        <h3>Home & Kitchen</h3>
+                        <span class="btn">View Products</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title slide-up">Featured Products</h2>
+            <div class="product-grid" id="featuredProducts">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="products.html" class="btn btn-primary slide-up">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ShopEase</h3>
+                    <p>Your one-stop shop for all your needs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=electronics">Electronics</a></li>
+                        <li><a href="products.html?category=fashion">Fashion</a></li>
+                        <li><a href="products.html?category=home">Home & Kitchen</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

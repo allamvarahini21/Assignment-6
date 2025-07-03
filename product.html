@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header slide-down">
+        <!-- Same header content as index.html -->
+    </header>
+    <!-- In your hero section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Welcome to Our Store</h1>
+            <p>Discover amazing products at unbeatable prices</p>
+            <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+    </div>
+</section>
+<!-- In your categories section -->
+<section class="categories">
+    <div class="container">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <a href="products.html?category=electronics">
+                    <img src="images/electronics.jpg" alt="Electronics">
+                    <h3>Electronics</h3>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="products.html?category=fashion">
+                    <img src="images/fashion.jpg" alt="Fashion">
+                    <h3>Fashion</h3>
+                </a>
+            </div>
+            <!-- More categories -->
+        </div>
+    </div>
+</section>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1 id="pageTitle">Our Products</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span id="breadcrumbCategory">Products</span>
+                </div>
+            </div>
+            
+            <div class="products-filter">
+                <div class="filter-left">
+                    <div class="category-filter">
+                        <label for="category">Filter by:</label>
+                        <select id="category">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="home">Home & Kitchen</option>
+                        </select>
+                    </div>
+                    <div class="sort-by">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="default">Default</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="name-asc">Name: A to Z</option>
+                            <option value="name-desc">Name: Z to A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-right">
+                    <div class="view-options">
+                        <button class="grid-view active"><i class="fas fa-th"></i></button>
+                        <button class="list-view"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <!-- Same footer content as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
